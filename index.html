@@ -285,7 +285,18 @@
               </p>
 
               <p class="children">
-                <label class="form-label-children" for="children">Дети</label>
+                <span class="form-label-children">
+                <label class="form-label-children" for="children">Дети:</label>
+                <span class="tooltip">
+                </span>
+                <button class="tooltip-toggle" type="button">
+                  <svg class="tooltip-icon" width="26" height="26" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
+                  </svg>
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
                 <button class="button-minus" type="button" id="children-button-minus">
                   <span class="visually-hidden">Уменьшить</span>
                 </button>
