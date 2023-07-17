@@ -1400,7 +1400,7 @@ overflow: hidden;
 }
 
 .form-label-children {
-  margin-right: 82px;
+  margin-right: 49px;
   margin-top: 12px;
 }
 
@@ -1449,6 +1449,41 @@ font-family: "PT Sans";
     font-size: 16px;
     line-height: 21px;
     color: #333333;
+  }
+
+  .tooltip-toggle {
+    border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block
+  }
+
+  .tooltip-text {
+    background-color:#333333;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 15px 18px 15px 22px;
+    border-radius: 10px;
+    display: block;
+    width: 216px;
+    position: absolute;
+  bottom: 100%;
+  margin-bottom: -197px;
+  left: 32%;
+  transform: translateX(-50%);
+  z-index: 1;
+  }
+
+  .tooltip {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
   }
 
 
