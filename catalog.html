@@ -87,19 +87,19 @@
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control tick">
-                                            <input class="control-input" type="checkbox" name="pool" checked>
+                                            <input class="control-input-tick" type="checkbox" name="pool" checked>
                                             Бассейн
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control tick">
-                                            <input class="control-input" type="checkbox" name="parking" checked>
+                                            <input class="control-input-tick" type="checkbox" name="parking" checked>
                                             Парковка
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control tick" lang="en">
-                                            <input class="control-input" type="checkbox" name="Wi-Fi">
+                                            <input class="control-input-tick" type="checkbox" name="Wi-Fi">
                                             Wi-Fi
                                         </label>
                                     </li>
@@ -110,21 +110,21 @@
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control circle">
-                                            <input class="control-input" type="radio" name="product-group" value="Hotel"
+                                            <input class="control-input-circle" type="radio" name="product-group" value="Hotel"
                                                 checked>
                                             Гостиница
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control circle">
-                                            <input class="control-input" type="radio" name="product-group"
+                                            <input class="control-input-circle" type="radio" name="product-group"
                                                 value="Motel">
                                             Мотель
                                         </label>
                                     </li>
                                     <li class="catalog-filter-item">
                                         <label class="control circle">
-                                            <input class="control-input" type="radio" name="product-group"
+                                            <input class="control-input-circle" type="radio" name="product-group"
                                                 value="Apartments">
                                             Апартаменты
                                         </label>
@@ -133,22 +133,28 @@
                             </fieldset>
                             <fieldset class="catalog-filter-group catalog-filter-group-cost">
                                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                                <label for="price-min" class="price-min-label">
+                                <div class="filter-cost">
+                                <label class="price-label price-label-min">
                                     <span class="filter-price">от</span>
-                                    <input type="number" class="price-min-input" id="price-min" name="price-min"
+                                    <input type="number" class="filter-price-min" id="price-min" name="price-min"
                                         value="0" min="0">
                                 </label>
-                                <label for="price-max" class="price-max-label">
+                                <label class="price-label price-label-max">
                                     <span class="filter-price">до</span>
-                                    <input type="number" class="price-max-input" id="price-max" name="price-max"
+                                    <input type="number" class="filter-price-max" id="price-max" name="price-max"
                                         value="9000" min="0">
                                 </label>
-                                <button class="range-handle range-handle-min">
+                                </div>
+                                <div class="filter-range">
+                                    <div class="filter-range-bar">
+                                     <button class="range-handle range-handle-min">
                                     <span class="visually-hidden">Установить минимальный предел цены</span>
                                 </button>
                                 <button class="range-handle range-handle-max">
                                     <span class="visually-hidden">Установить максимальный предел цены</span>
                                 </button>
+                                    </div>
+                                </div>
                             </fieldset>
                             <div class="filter-form">
                                 <button class="button button-apply button-used" type="submit">Применить</button>
@@ -167,7 +173,7 @@
                             </select>
                             <ul class="catalog-group">
                                 <li class="catalog-group-button">
-                                <a class="button button-togglet button-card"  aria-current="true">
+                                <a class="button button-togglet button-togglet-active button-card"  aria-current="true">
                                     <span class="visually-hidden">Группировать в карточки</span>
                                 </a>
                             </li>
