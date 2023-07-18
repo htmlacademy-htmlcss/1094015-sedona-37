@@ -1255,6 +1255,7 @@ body a {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   transform: translate(-50%, -50%);
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-title {
@@ -1478,6 +1479,7 @@ flex-wrap: nowrap;
   transform: translateX(-50%);
   z-index: 1;
   display: block;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .tooltip {
@@ -1557,3 +1559,13 @@ flex-wrap: nowrap;
 .form-search-button:active {
   background-color: #82B3D3;
 }
+
+.toggle-icon:hover {
+  fill:#000000;
+}
+
+.toggle-icon {
+  fill: #756157;
+  fill-opacity: 0.3;
+}
+fill="#756157" fill-opacity=".3"
