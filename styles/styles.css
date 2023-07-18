@@ -1448,7 +1448,6 @@ flex-wrap: nowrap;
   text-transform: none;
   padding: 15px 18px 18px 22px;
   border-radius: 8px;
-  display: block;
   width: 160px;
   position: absolute;
   bottom: 100%;
@@ -1456,6 +1455,7 @@ flex-wrap: nowrap;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+  display: none;
 }
 
 .tooltip {
@@ -1464,6 +1464,15 @@ flex-wrap: nowrap;
   margin-left: 2px;
   width: 16px;
   height: 16px;
+}
+
+.tooltip-toggle:hover .tooltip-icon {
+  color: #AF7842;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .info-popover {
