@@ -229,92 +229,98 @@
           </section>
         </div>
       </footer>
-      <div class="modal-container">
-        <div class="modal modal-auth">
-          <button class="modal-close-button modal-close">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <section class="modal-content">
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group appointment-arrival-date">
-                <label class="form-label form-label-arrival" for="arrival-date">Дата Заезда:</label>
-                <input class="auth-form-field field" type="text" id="arrival-date" name="appoiment-date"
-                  placeholder="27 апреля 2020">
-                <span class="date-past" id="first-date" style="color: #ff5757;">Мы не можем отправить вас в
-                  прошлое.</span>
-                <button class="calender" type="button">
-                  <svg width="16" height="15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
-                    <path
-                      d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" />
-                    <path
-                      d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
-                  </svg>
-                  <span class="visually-hidden">Выбрать дату заезда</span>
-                </button>
-              </p>
-
-              <p class="field-group appointment-departure-date">
-                <label class="form-label form-label-departure" for="departure-date">Дата Выезда:</label>
-                <input class="auth-form-field field" type="text" id="departure-date" name="appoiment-date"
-                  placeholder="1 сентября 2023">
-                <span class="date-free" id="free-date">На эти даты есть свободные номера. Пока есть.</span>
-                <button class="calender" type="button">
-                  <svg width="16" height="15" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.75 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5Z" />
-                    <path
-                      d="M15 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h14c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h14v7ZM1 6V3h2v2h1V3h8v2h1V3h2v3H1Z" />
-                    <path
-                      d="M8 10c.3 0 .5-.2.5-.5S8.3 9 8 9s-.5.2-.5.5.2.5.5.5ZM10.25 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM5.75 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM8 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM10.25 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM12.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM12.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z" />
-                  </svg>
-                  <span class="visually-hidden">Выбрать дату выезда</span>
-                </button>
-              </p>
-
-              <p class="adults">
-                <label class="form-label-adults" for="adults">Взрослые:</label>
-                <button class="button-minus" type="button" id="adults-button-minus">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <input class="auth-form-field auth-form-field-adults" type="text" id="adults" name="appoiment-date"
-                  placeholder="2">
-                <button class="button-plus" type="button" id="adults-button-plus">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </p>
-
-              <p class="children">
-                <span class="form-label-children">
-                <label class="form-label-children" for="children">Дети:</label>
-                <span class="tooltip">
-                </span>
-                <button class="tooltip-toggle" type="button">
-                  <svg class="tooltip-icon" width="26" height="26" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="13" cy="13" r="13" fill="#83B3D3"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/>
-                  </svg>
-                </button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-                <button class="button-minus" type="button" id="children-button-minus">
-                  <span class="visually-hidden">Уменьшить</span>
-                </button>
-                <input class="auth-form-field auth-form-field-children" type="text" id="children" name="appoiment-date"
-                  placeholder="2">
-                <button class="button-plus" type="button" id="children-button-plus">
-                  <span class="visually-hidden">Увеличить</span>
-                </button>
-              </p>
-              <button class="button button-find" type="submit">Найти</button>
-            </form>
-          </section>
-        </div>
-
-
-      </div>
     </div>
-
+    <div class="modal-container modal-off">
+      <div class="modal">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть окно поиска.</span>
+          <svg class="cross-toggle" aria-hidden="true" focusable="false" width="13" height="13"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#a)">
+              <path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"
+                fill="#000" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h13v13H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <form class="form-search" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-search-label">
+            <span class="label-text">Дата заезда:</span>
+            <input class="search-date" type="text" name="date-checkin" value="27 апреля 2020" required>
+            <span class="response-message wrong-date">Мы не можем отправить вас в прошлое.</span>
+          </label>
+          <label class="form-search-label">
+            <span class="label-text">Дата выезда:</span>
+            <input class="search-date" type="text" name="date-checkout" value="1 сентября 2021" required>
+            <span class="response-message">На эти даты есть свободные номера. Пока есть.</span>
+          </label>
+          <div class="persons-wrapper">
+            <div class="form-search-label form-search-label-person">
+              <label class="label-text label-text-person" for="persons">Взрослые:</label>
+              <input class="search-persons" type="number" id="persons" name="persons" value="2" min="1" step="1"
+                required>
+              <button class="minus-spin" type="button">
+                <span class="visually-hidden">Уменьшить количество взрослых в поездке.</span>
+                <svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0v1h13V0H0Z" />
+                </svg>
+              </button>
+              <button class="plus-spin" type="button">
+                <span class="visually-hidden">Увеличить количество взрослых в поездке.</span>
+                <svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#a)">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+            <div class="form-search-label form-search-label-children">
+              <div class="children-wrapper">
+                <label class="label-text label-text-children" for="children">Дети:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13" cy="13" r="13" fill="currentColor" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                        fill="currentColor" />
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                    лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
+                </span>
+              </div>
+            </div>
+            <input class="search-children" id="children" type="number" name="children" value="2" min="0" step="1"
+              aria-describedby="children-info" required>
+            <button class="minus-spin" type="button">
+              <span class="visually-hidden">Уменьшить количество детей в поездке.</span>
+              <svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="1"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0v1h13V0H0Z" />
+              </svg>
+            </button>
+            <button class="plus-spin" type="button">
+              <span class="visually-hidden">Увеличить количество детей в поездке.</span>
+              <svg class="toggle-icon" aria-hidden="true" focusable="false" width="13" height="13"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)">
+                  <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                </g>
+              </svg>
+            </button>
+          </div>
+          <button class="form-search-button" type="submit">Найти</button>
+      </div>
+      </form>
+    </div>
+    </div>
   </body>
-
 </html>
