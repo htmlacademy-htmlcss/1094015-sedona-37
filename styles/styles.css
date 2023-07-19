@@ -1479,6 +1479,7 @@ body a {
   margin-left: auto;
   font: inherit;
   background-color: #f2f2f2;
+  color: #000000;
   border: none;
   border-radius: 4px;
   width: 420px;
@@ -1488,24 +1489,36 @@ body a {
   background-image: url(../images/modal-window/calendar.svg);
 }
 
-.search-date.text {
-  color: #000000;
-}
-
 .search-date:default {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
 
 .search-date:hover {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
 
 .search-date:focus {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
+/* .search-date.text { */
+  /* color: #000000; */
+/* } */
+/*  */
+/* .search-date:default { */
+  /* color: rgba(0, 0, 0, 0.6); */
+/* } */
+/*  */
+/* .search-date:hover { */
+  /* color: #000000; */
+  /* opacity: 0.6; */
+  /* background-color: #e6e6e6; */
+/* } */
+/*  */
+/* .search-date:focus { */
+  /* color: #000000; */
+  /* opacity: 0.6; */
+  /* background-color: #e6e6e6; */
+/* } */
 
 .wrong-date {
   color: #ff5757;
@@ -1683,6 +1696,7 @@ body a {
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 
 .search-children {
@@ -1697,6 +1711,7 @@ body a {
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 
 .form-search-button {
@@ -1748,9 +1763,9 @@ body a {
   padding: 0;
 }
 
-.modal-off {
-  display: none;
-}
+/* .modal-off { */
+  /* display: none; */
+/* } */
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
