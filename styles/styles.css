@@ -519,7 +519,7 @@ body a {
   height: 52px;
   padding: 0;
   border: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   line-height: 24px;
   padding-left: 20px;
@@ -617,7 +617,7 @@ body a {
 }
 
 .breadcrumbs-hotel {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1672,7 +1672,7 @@ body a {
   background-color: #f2f2f2;
   border: none;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
@@ -1687,7 +1687,7 @@ body a {
   background-color: #f2f2f2;
   border: none;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
@@ -1697,7 +1697,7 @@ body a {
 .form-search-button {
   margin-top: 33px;
   padding: 18px 256px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
