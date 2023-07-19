@@ -788,18 +788,18 @@ body a {
 
 .range-handle:hover {
   color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-handle:focus {
   color: #ffffff;
-  box-shadow: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-handle:active {
   color: #ffffff;
   border: 2px solid #83b3d3;
-  box-shadow: rgba(0, 0, 0, 0.4);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .range-handle-min {
@@ -1377,10 +1377,9 @@ body a {
   height: 448px;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-title {
@@ -1479,6 +1478,7 @@ body a {
   margin-left: auto;
   font: inherit;
   background-color: #f2f2f2;
+  color: #000000;
   border: none;
   border-radius: 4px;
   width: 420px;
@@ -1488,23 +1488,16 @@ body a {
   background-image: url(../images/modal-window/calendar.svg);
 }
 
-.search-date.text {
-  color: #000000;
-}
-
 .search-date:default {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
 
 .search-date:hover {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
 
 .search-date:focus {
-  color: #000000;
-  opacity: 0.6;
+  background-color: #e6e6e6;
 }
 
 .wrong-date {
@@ -1667,7 +1660,7 @@ body a {
   line-height: 20px;
   color: #ffffff;
   background-color: #333333;
-  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 }
 
@@ -1683,6 +1676,7 @@ body a {
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 
 .search-children {
@@ -1697,6 +1691,7 @@ body a {
   font-size: 18px;
   line-height: 20px;
   box-sizing: border-box;
+  padding-left: 10px;
 }
 
 .form-search-button {
